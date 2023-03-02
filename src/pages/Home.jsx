@@ -7,7 +7,6 @@ import FeaturesBlocks from '../partials/FeaturesBlocks';
 import FeaturesZigZag from '../partials/FeaturesZigzag';
 import Testimonials from '../partials/Testimonials';
 import Newsletter from '../partials/Newsletter';
-import Banner from '../partials/Banner';
 import Footer from '../partials/Footer';
 
 function Home() {
@@ -20,18 +19,16 @@ function Home() {
       <main className="grow">
         {/*  Page illustration */}
         <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
-          <PageIllustration />
+          {/* <PageIllustration /> */}
         </div>
 
         {/*  Page sections */}
         <HeroHome />
-        <FeaturesBlocks />
+        {/* <FeaturesBlocks /> */}
         <FeaturesZigZag />
         <Testimonials />
         <Newsletter />
       </main>
-
-      <Banner />
 
       {/*  Site footer */}
       <Footer />
