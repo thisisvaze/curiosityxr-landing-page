@@ -77,12 +77,12 @@ module.exports = {
         full: "100%",
       },
       letterSpacing: {
-        tighter: "-0.02em",
-        tight: "-0.01em",
+        tighter: "-0.02rem",
+        tight: "-0.01rem",
         normal: "0",
-        wide: "0.01em",
-        wider: "0.02em",
-        widest: "0.4em",
+        wide: "0.01rem",
+        wider: "0.02rem",
+        widest: "0.4rem",
       },
       minWidth: {
         10: "2.5rem",
