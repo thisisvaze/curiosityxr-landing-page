@@ -12,7 +12,7 @@ function FeaturesZigzag() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-cyan-600 bg-cyan-200 rounded-full mb-4">Learn the way you want to</div>
+            <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-cyan-600 bg-cyan-200 rounded-full mb-4">It's like magic</div>
             <h1 className="h2 mb-4">The ultimate learning experience</h1>
             <p className="text-xl text-gray-400">We are building tools to support learning like never before.</p>
           </div>

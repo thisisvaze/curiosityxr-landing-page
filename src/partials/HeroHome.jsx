@@ -37,7 +37,7 @@ function HeroHome() {
             {/* Hero image */}
             <div>
             <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
-              <img className="mx-auto" src={HeroImage} width="1024" height="504" alt="Hero" />
+              <img className="mx-auto" src={HeroImage} width="900" height="504" alt="Hero" />
               {/* <a
                 className="absolute group"
                 href="#0"
@@ -78,10 +78,10 @@ function HeroHome() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-2 md:pb-2">
             <h1 className="h1 mb-4" data-aos="fade-up">
-              Discover reality, augmented
+              Explore Reality, augmented.
             </h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
-            Explore endless possibilities and support your curiosity, the revolutionary mixed reality educational app that brings learning to life!
+            Discover endless possibilities and support your curiosity
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center pb-1">
               <div data-aos="fade-up" data-aos-delay="400">
