@@ -3,8 +3,6 @@ import axios from 'axios';
 
 let accessToken = "patVLRbn1vRtEjZRP.5733697aba77950388072189368a007dc5a7b004c435f4868791c90b0ca06b79";
 
-
-
 function Newsletter() {
   const addRowToAirtable = async () => {
 
@@ -19,7 +17,6 @@ function Newsletter() {
       records:[{
         fields: {
           "Email ID": email,
-
           // map your form data to the appropriate Airtable fields
           // example: name: formData.name,
         },
@@ -31,7 +28,7 @@ function Newsletter() {
       console.log(JSON.stringify(data));
       const response = await axios.post(endpoint, JSON.stringify(data) , { headers });
       console.log(response.data); // the new record object
-      alert("Thank you! We will get back to you on email in a few days."  );
+      // alert("Thank you! We will get back to you on email in a few days."  );
     } catch (error) {
       console.error(error);
       console.log("Could not send");
@@ -73,7 +70,7 @@ const handleEmailChange = (event) => {
             <form className="w-full lg:w-1/2" onSubmit={addRowToAirtable}>
               <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
                 <input type="email" className="w-full appearance-none bg-purple-600 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400" placeholder="Email ID" aria-label="Your best email…" value={email} onChange={handleEmailChange} />
-                <button type="submit" className="btn text-gray-100 bg-purple-300 hover:bg-white shadow" href="#0">Join</button>
+                <button type="submit" className="btn text-gray-100 bg-purple-300 hover:bg-white shadow">Join</button>
               </div>
               
               {/* Success message */}

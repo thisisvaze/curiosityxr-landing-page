@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 import './css/style.css';
 
 import AOS from 'aos';
-
+import Privacy from './pages/Privacy';
 import Home from './pages/Home';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
@@ -41,6 +41,7 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/privacy-policy" element={<Privacy />} />
       </Routes>
     </>
   );
