@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import axios from 'axios';
-
+import BannerImage from '../images/banner.png';
 let accessToken = "patVLRbn1vRtEjZRP.5733697aba77950388072189368a007dc5a7b004c435f4868791c90b0ca06b79";
 
 function Newsletter() {
@@ -28,7 +28,7 @@ function Newsletter() {
       console.log(JSON.stringify(data));
       const response = await axios.post(endpoint, JSON.stringify(data) , { headers });
       console.log(response.data); // the new record object
-      // alert("Thank you! We will get back to you on email in a few days."  );
+      alert("Thank you! We will get back to you on email in a few days."  ); 
     } catch (error) {
       console.error(error);
       console.log("Could not send");
@@ -39,12 +39,14 @@ const handleEmailChange = (event) => {
   setEmail(event.target.value);
 };
   return (
-    <section>
+    <section  id={"Waitlist"} >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* CTA box */}
-        <div className="relative bg-purple-500 py-10 px-8 md:py-16 md:px-12" data-aos="fade-up">
-
+        <div  className="relative bg-purple-900 py-10 px-8 md:py-16 md:px-12" data-aos="fade-up" style={{ backgroundImage: `url(${BannerImage})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
+        }} >
           {/* Background illustration */}
           {/* <div className="absolute right-0 top-0 -ml-40 pointer-events-none" aria-hidden="true">
             <svg width="238" height="110" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,8 +71,8 @@ const handleEmailChange = (event) => {
             {/* CTA form */}
             <form className="w-full lg:w-1/2" onSubmit={addRowToAirtable}>
               <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
-                <input type="email" className="w-full appearance-none bg-purple-600 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400" placeholder="Email ID" aria-label="Your best email…" value={email} onChange={handleEmailChange} />
-                <button type="submit" className="btn text-gray-100 bg-purple-300 hover:bg-white shadow">Join</button>
+                <input type="email" className="w-full appearance-none bg-white border border-gray-700 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-black placeholder-gray-700" placeholder="Email ID" aria-label="Your best email…" value={email} onChange={handleEmailChange} />
+                <button type="submit" className="btn text-white bg-purple-400 hover:bg-purple-600 shadow">Join</button>
               </div>
               
               {/* Success message */}

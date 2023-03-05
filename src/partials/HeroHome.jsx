@@ -85,7 +85,7 @@ function HeroHome() {
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center pb-1">
               <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-gray-200 hover:bg-gray-300 w-full mb-4 sm:w-auto sm:mb-0" href="#0">
+                <a className="btn text-white bg-gray-200 hover:bg-gray-300 w-full mb-4 sm:w-auto sm:mb-0" href="#Waitlist">
                   Join the waitlist
                 </a>
               </div>
