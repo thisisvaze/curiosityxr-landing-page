@@ -64,9 +64,22 @@ We may also disclose your information in response to a subpoena, court order, or
 However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.</p>
           </div>
           <div className="text-left max-w-3xl mx-auto  pb-12 md:pb-16">
+            <p className="h4  mb-4">How can you update/delete my informtion?</p>
+            <p className="text-xl text-gray-400">
+              
+                        Yes, you can update or correct your information depending on your relationship with Curiosity XR. If you are a personnel of the company, you may refer to the internal employment policies for instructions on how to update or correct your information.
+              As a customer, you have the right to request the restriction of certain uses and disclosures of your personally identifiable information. You may contact Curiosity XR to update or correct your personally identifiable information, change your communication preferences, or delete your personally identifiable information on their system by cancelling your account. However, such changes will not affect other information that the company maintains or has provided to third parties in accordance with their privacy policy.
+              To protect your privacy and security, Curiosity XR may take reasonable steps, such as requesting a unique password, to verify your identity before granting you profile access or making corrections. It is your responsibility to maintain the secrecy of your unique password and account information at all times.
+              Please note that it may not be technically possible to remove each and every record of the information you have provided to Curiosity XR from their system. Backing up their systems to protect information from inadvertent loss means that a copy of your information may exist in a non-erasable form that may be difficult or impossible for the company to locate. However, Curiosity XR will promptly update, correct, change, or delete personal information stored in databases they actively use, and other readily searchable media, as appropriate and to the extent reasonably and technically practicable.
+          </p> <p className="text-xl mt-5 text-gray-400">
+              As an end user, if you wish to update, delete, or receive any information that Curiosity XR has about you, you may contact them at hello@curiosityxr.com.</p>   
+          </div>
+          <div className="text-left max-w-3xl mx-auto  pb-12 md:pb-16">
             <p className="h4  mb-4">Children's privacy</p>
             <p className="text-xl text-gray-400">Our application is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under the age of 13.</p>
           </div>
+         
+      
           <div className="text-left max-w-3xl mx-auto  pb-12 md:pb-16">
             <p className="h4  mb-4">Changes to the privacy policy</p>
             <p className="text-xl text-gray-400">We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on our website or within our application. You are advised to review this privacy policy periodically for any changes.</p>
@@ -75,7 +88,7 @@ However, no method of transmission over the internet or electronic storage is 10
             <p className="h4  mb-4">Contact Us</p>
             <p className="text-xl text-gray-400">If you have any questions about this privacy policy, please contact us on .</p>
           </div> */}
-        </div>
+       </div>
       </div>
     </section>
       </main>

@@ -22,3 +22,16 @@
 [x-cloak=""] {
     display: none;
 }
+
+@media (max-width: 767px) {
+    h1 {
+      letter-spacing: -0.13rem !important;
+    }
+    h3 {
+        letter-spacing: -0.15rem !important;
+      }
+
+      h4{
+        letter-spacing: -0.1rem !important;
+      }
+  }
