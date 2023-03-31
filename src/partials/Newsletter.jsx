@@ -1,49 +1,79 @@
 import React,{useState} from 'react';
 import axios from 'axios';
 import BannerImage from '../images/banner.png';
-let accessToken = "patVLRbn1vRtEjZRP.5733697aba77950388072189368a007dc5a7b004c435f4868791c90b0ca06b79";
+let accessToken = "patVLRbn1vRtEjZRP.efd8c18a297f3982fee2e3e4f48f959d5790b9003de065af93b8a57efe867c18";
 
 function Newsletter() {
-  const addRowToAirtable = async () => {
 
-    let baseID = "appSRqweow21NSv3a";
-    let tableName = "tbliMnykFEaZ2twJY";
-    const endpoint = "https://api.airtable.com/v0/"+baseID+"/"+tableName;
-    const headers = {
-      Authorization: 'Bearer ' + accessToken,
-      'Content-Type': 'application/json',
-    };
-    const data = {
-      records:[{
-        fields: {
-          "Email ID": email,
-          // map your form data to the appropriate Airtable fields
-          // example: name: formData.name,
-        },
-      }]
-      
-    };
-  
-    try {
-      console.log(JSON.stringify(data));
-      const response = await axios.post(endpoint, JSON.stringify(data) , { headers });
-      console.log(response.data); // the new record object
-      alert("Thank you! We will get back to you on email in a few days."  ); 
-    } catch (error) {
-      console.error(error);
-      console.log("Could not send");
+  const handleValidation = async () => {
+    if(name.length<1 || email.length<1 || role.length<1 || purpose.length<1){
+      alert("Please add all the required fields");
+     
     }
+    else{
+      let baseID = "appSRqweow21NSv3a";
+      let tableName = "tbliMnykFEaZ2twJY";
+      const endpoint = "https://api.airtable.com/v0/"+baseID+"/"+tableName;
+      const headers = {
+        Authorization: 'Bearer ' + accessToken,
+        'Content-Type': 'application/json',
+      };
+      const data = {
+        records:[{
+          fields: {
+            EmailID: email,
+            Name: name,
+            Role: role,
+            Purpose: purpose
+            // map your form data to the appropriate Airtable fields
+            // example: name: formData.name,
+          },
+        }]
+        
+      };
+    
+      try {
+        console.log(JSON.stringify(data));
+        const response = await axios.post(endpoint, data , { headers });
+        console.log(response.data); // the new record object
+        alert("Thank you! We will get back to you on email in a few days."  ); 
+      } catch (error) {
+        console.error(error);
+        console.log("Could not send");
+      }
+      return true;
+    }
+    
+  }
+
+  const addRowToAirtable = async (event) => {
+    event.preventDefault();
+
+    handleValidation();
+   
   };
   const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [role, setRole] = useState('');
+  const [purpose, setPurpose] = useState('');
 const handleEmailChange = (event) => {
   setEmail(event.target.value);
+};
+const handleNameChange = (event) => {
+  setName(event.target.value);
+};
+const handleRoleChange = (event) => {
+  setRole(event.target.value);
+};
+const handlePurposeChange = (event) => {
+  setPurpose(event.target.value);
 };
   return (
     <section  id={"Waitlist"} >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* CTA box */}
-        <div  className="relative bg-purple-900 py-10 px-8 md:py-16 md:px-12" data-aos="fade-up" style={{ backgroundImage: `url(${BannerImage})`,
+        <div  className="relative bg-purple-800 py-10 px-8 md:py-16 md:px-12" data-aos="fade-up" style={{ 
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'
         }} >
@@ -70,9 +100,26 @@ const handleEmailChange = (event) => {
 
             {/* CTA form */}
             <form className="w-full lg:w-1/2" onSubmit={addRowToAirtable}>
-              <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
-                <input type="email" className="w-full appearance-none bg-white border border-gray-700 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-black placeholder-gray-700" placeholder="Email ID" aria-label="Your best email…" value={email} onChange={handleEmailChange} />
-                <button type="submit" className="btn text-white bg-purple-400 hover:bg-purple-600 shadow">Join</button>
+              <div>
+              <div className="pb-2 pt-5">
+                <span className='h5 text-white pb-4 '>Name*</span>
+                </div>
+           <input type="text" className="w-full appearance-none  bg-white border border-transparent focus:border-purple-300 rounded-sm px-4 py-3 sm:mb-0 sm:mr-2 text-black placeholder-gray-600" placeholder="Full Name" aria-label="Your best email…" value={name} onChange={handleNameChange} />
+
+           <div className="pb-2 pt-5">
+                <span className='h5 text-white '>Email ID*</span>
+                </div>
+                <input type="email" className="w-full appearance-none bg-white border border-transparent  border-gray-700 focus:border-purple-300 rounded-sm px-4 py-3 sm:mb-0 sm:mr-2 text-black placeholder-gray-600" placeholder="To share waitlist updates" aria-label="Your best email…" value={email} onChange={handleEmailChange} />
+                <div className="pb-2 pt-5">
+                <span className='h5 text-white'>Role*</span>
+                </div>
+                <input type="text" className="w-full  appearance-none bg-white border border-transparent  border-gray-700 focus:border-purple-300 rounded-sm px-4 py-3sm:mb-0 sm:mr-2 text-black placeholder-gray-600" placeholder="High school teacher, XR enthusiast etc." aria-label="Your best email…" value={role} onChange={handleRoleChange} />
+                <div className="pb-2 pt-5">
+                <span className='h5 text-white'>What would you like to use CuriosityXR for?*</span>
+                </div>
+                
+                <input type="textarea" className="w-full appearance-none bg-white border border-transparent  border-gray-700 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-black placeholder-gray-600" placeholder="I would like to learn biology molecular structures ..." aria-label="Your best email…" value={purpose} onChange={handlePurposeChange} />
+                <button type="submit" className="btn text-white mt-10  bg-purple-400 hover:bg-purple-600 shadow">Join</button>
               </div>
               
               {/* Success message */}
