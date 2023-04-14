@@ -35,8 +35,11 @@ function Newsletter() {
       try {
         console.log(JSON.stringify(data));
         const response = await axios.post(endpoint, data , { headers });
-        console.log(response.data); // the new record object
-        alert("Thank you! We will get back to you on email in a few days."  ); 
+        //console.log(response.data); // the new record object
+        //alert("Thank you! We will get back to you on email in a few days."  ); 
+        setDisabled(true);
+        setShowResults(true);
+        document.getElementById("form").hidden = true
       } catch (error) {
         console.error(error);
         console.log("Could not send");
@@ -55,7 +58,10 @@ function Newsletter() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [role, setRole] = useState('');
+  const [showResults, setShowResults] = React.useState(false);
   const [purpose, setPurpose] = useState('');
+  const [isDisabled, setDisabled] = useState(false);
+
 const handleEmailChange = (event) => {
   setEmail(event.target.value);
 };
@@ -68,6 +74,9 @@ const handleRoleChange = (event) => {
 const handlePurposeChange = (event) => {
   setPurpose(event.target.value);
 };
+
+const WaitlistMessage = () => ( <span className='h5 text-white'>🎉 You're on the waitlist! You will recieve an email once you have access to CuriosityXR. </span>)
+
   return (
     <section  id={"Waitlist"} >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -99,33 +108,36 @@ const handlePurposeChange = (event) => {
             </div>
 
             {/* CTA form */}
-            <form className="w-full lg:w-1/2" onSubmit={addRowToAirtable}>
-              <div>
-              <div className="pb-2 pt-5">
-                <span className='h5 text-white pb-4 '>Name*</span>
-                </div>
-           <input type="text" className="w-full appearance-none  bg-white border border-transparent focus:border-purple-300 rounded-sm px-4 py-3 sm:mb-0 sm:mr-2 text-black placeholder-gray-600" placeholder="Full Name" aria-label="Your best email…" value={name} onChange={handleNameChange} />
+  
+            <form id="form" className='w-full lg:w-1/2' onSubmit={addRowToAirtable}>
+  <div>
+  <div className="pb-2 pt-5">
+    <span className='h5 text-white pb-4 '>Name*</span>
+    </div>
+<input type="text" className="w-full appearance-none  bg-white border border-transparent focus:border-purple-300 rounded-sm px-4 py-3 sm:mb-0 sm:mr-2 text-black placeholder-gray-600" placeholder="Full Name" aria-label="Your best email…" value={name} onChange={handleNameChange} />
 
-           <div className="pb-2 pt-5">
-                <span className='h5 text-white '>Email ID*</span>
-                </div>
-                <input type="email" className="w-full appearance-none bg-white border border-transparent  border-gray-700 focus:border-purple-300 rounded-sm px-4 py-3 sm:mb-0 sm:mr-2 text-black placeholder-gray-600" placeholder="To share waitlist updates" aria-label="Your best email…" value={email} onChange={handleEmailChange} />
-                <div className="pb-2 pt-5">
-                <span className='h5 text-white'>Role*</span>
-                </div>
-                <input type="text" className="w-full  appearance-none bg-white border border-transparent  border-gray-700 focus:border-purple-300 rounded-sm px-4 py-3sm:mb-0 sm:mr-2 text-black placeholder-gray-600" placeholder="High school teacher, XR enthusiast etc." aria-label="Your best email…" value={role} onChange={handleRoleChange} />
-                <div className="pb-2 pt-5">
-                <span className='h5 text-white'>What would you like to use CuriosityXR for?*</span>
-                </div>
-                
-                <input type="textarea" className="w-full appearance-none bg-white border border-transparent  border-gray-700 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-black placeholder-gray-600" placeholder="I would like to learn biology molecular structures ..." aria-label="Your best email…" value={purpose} onChange={handlePurposeChange} />
-                <button type="submit" className="btn text-white mt-10  bg-purple-400 hover:bg-purple-600 shadow">Join</button>
-              </div>
-              
-              {/* Success message */}
-              {/* <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
-            </form>
+<div className="pb-2 pt-5">
+    <span className='h5 text-white '>Email ID*</span>
+    </div>
+    <input type="email" className="w-full appearance-none bg-white border border-transparent  border-gray-700 focus:border-purple-300 rounded-sm px-4 py-3 sm:mb-0 sm:mr-2 text-black placeholder-gray-600" placeholder="To share waitlist updates" aria-label="Your best email…" value={email} onChange={handleEmailChange} />
+    <div className="pb-2 pt-5">
+    <span className='h5 text-white'>Role*</span>
+    </div>
+    <input type="text" className="w-full  appearance-none bg-white border border-transparent  border-gray-700 focus:border-purple-300 rounded-sm px-4 py-3sm:mb-0 sm:mr-2 text-black placeholder-gray-600" placeholder="High school teacher, XR enthusiast etc." aria-label="Your best email…" value={role} onChange={handleRoleChange} />
+    <div className="pb-2 pt-5">
+    <span className='h5 text-white'>What would you like to use CuriosityXR for?*</span>
+    </div>
+    
+    <input type="textarea" className="w-full appearance-none bg-white border border-transparent  border-gray-700 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-black placeholder-gray-600" placeholder="I would like to learn biology molecular structures ..." aria-label="Your best email…" value={purpose} onChange={handlePurposeChange} />
+    
+    <button type="submit" id="submit-button" disabled={isDisabled} className="btn text-white mt-10 mb-5 bg-purple-400 hover:bg-purple-600 shadow">Join</button>
+    
+  </div>
+           
+            
 
+              </form>
+              { showResults ? <WaitlistMessage /> : null }
           </div>
 
         </div>
