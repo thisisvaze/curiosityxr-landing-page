@@ -32,7 +32,7 @@ function Privacy() {
           <div className="max-w-3xl mx-auto text-left pb-12 md:pb-16">
             
             <h1 className="h2 mb-4">Privacy Policy</h1>
-            <p className="text-xl  text-gray-400">At Curiosity XR, we understand the importance of privacy and the protection of personal information. This privacy policy outlines how we collect, use, disclose, and protect your personal information when you use our application and services.</p>
+            <p className="text-xl  text-gray-400">At CuriosityXR, we understand the importance of privacy and the protection of personal information. This privacy policy outlines how we collect, use, disclose, and protect your personal information when you use our application and services.</p>
 
           </div>
           <div className="text-left max-w-3xl mx-auto  pb-12 md:pb-16">

@@ -33,7 +33,7 @@ function Footer() {
             </ul>
 
             {/* Copyrights note */}
-            <div className="text-gray-400 text-sm mr-4">&copy; Curiosity XR. 2023.</div>
+            <div className="text-gray-400 text-sm mr-4">&copy; CuriosityXR. 2023.</div>
 
           </div>
 

@@ -30,7 +30,7 @@ function Home() {
         <FeaturesZigZag />
         {/* <Testimonials /> */}
       
-        <Newsletter/>
+        {/* <Newsletter/> */}
         <FeatureCollabs />
       </main>
 
