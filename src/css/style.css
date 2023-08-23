@@ -35,3 +35,15 @@
         letter-spacing: -0.1rem !important;
       }
   }
+
+  .header-image{
+    object-fit: cover;
+    height: 60vh !important;
+    object-position: top; /* Center the image within the element */
+    background-repeat: no-repeat;
+  }
+
+  .backdrop-blur{
+    backdrop-filter: blur(200px);
+    background: rgba(255, 255, 255, 0.7);
+  }

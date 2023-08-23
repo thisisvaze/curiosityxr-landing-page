@@ -8,14 +8,14 @@ function HeroHome() {
 
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+      <div className="mx-auto  px-0 relative">
 
         {/* Hero content */}
-        <div className="relative pt-20 pb-10 md:pt-20 md:pb-16">
+        <div className="relative  md:pb-16">
             {/* Hero image */}
             <div>
             <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
-              <img className="mx-auto mb-10" src={HeroImage} width="100%" height="auto" alt="Hero" />
+              <img className="mx-auto mb-10 header-image" src={HeroImage} width="100%" alt="Hero" />
               {/* <a
                 className="absolute group"
                 href="#0"
@@ -55,8 +55,8 @@ function HeroHome() {
           </div>
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-2 md:pb-2">
-            <h1 className="h1 mb-4" data-aos="fade-up">
-              Bring learning to life
+            <h1 className="h1 mb-4 mt-6" data-aos="fade-up">
+              Learning designed for humans
             </h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
             Discover endless possibilities with AI and Mixed Reality

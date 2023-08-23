@@ -12,25 +12,25 @@ function FeaturesZigzag() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-cyan-600 bg-cyan-200 rounded-full mb-4">It's like magic</div>
+            <div className="inline-flex text-sm py-1 px-3 m-2 text-purple-600 bg-purple-200 rounded-full mb-4">It's like magic</div>
             <h1 className="h2 mb-4">The ultimate learning experience</h1>
             <p className="text-xl text-gray-400">We are building tools to support learning like never before.</p>
           </div>
 
           {/* Items */}
-          <div className="grid gap-20">
+          <div className="grid mt-5 md:mt-20 gap-20 md:gap-40">
 
             {/* 1st item */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage01} width="540" height="405" alt="Features 01" />
+                <img className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage01} width="460" height="405" alt="Features 01" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2">What is the color of a cell wall?</div>
-                  <h3 className="h3 mb-3">Be curious. Be active.</h3>
+                  <h3 className="h3 mb-3">Be curious </h3>
                   {/* <p className="text-xl text-gray-400 mb-4">Active learning </p> */}
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
@@ -60,7 +60,7 @@ function FeaturesZigzag() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width="540" height="405" alt="Features 02" />
+                <img className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width="460" height="405" alt="Features 02" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
@@ -96,13 +96,13 @@ function FeaturesZigzag() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width="540" height="405" alt="Features 03" />
+                <img className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width="460" height="405" alt="Features 03" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2">A Plant cell coming out of a plant?</div>
-                  <h3 className="h3 mb-3">Digital Microscope</h3>
+                  <h3 className="h3 mb-3">A Digital Microscope</h3>
                   <p className="text-xl text-gray-400 mb-4">Discover knowledge from your surroundings</p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
