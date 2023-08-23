@@ -14,7 +14,7 @@ import SupportOrg from '../partials/SupportOrg';
 
 function Home() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden bg-slate-100">
+    <div className="flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
       <Header />
 

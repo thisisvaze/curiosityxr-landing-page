@@ -4,7 +4,7 @@ function SupportOrg() {
   return (
     <section>
        
-      <div className="mx-auto px-4 sm:px-6 bg-slate-200 ">
+      <div className="mx-auto px-4 sm:px-6 bg-slate-100 ">
         <div className="max-w-4xl  mx-auto py-12 md:py-20">
 
           {/* Section header */}

@@ -11,9 +11,9 @@ function Testimonials() {
         <div className="py-12 md:py-20 border-t border-gray-800">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h3 mb-4">"We are not meant to sit on a chair and learn about the world, we are meant to explore the world itself."</h2>
-            <p className="text-xl text-gray-400">Bret Victor</p>
+          <div className="max-w-3xl mx-auto text-center py-12 md:py-20">
+            <h2 className="h2 opacity-20 mb-10 px-5">"We are not meant to sit on a chair and learn about the world, we are meant to explore the world itself."</h2>
+            <p className="text-xl text-gray-400"> - Bret Victor</p>
           </div>
 
           {/* Testimonials */}
@@ -63,7 +63,7 @@ function Testimonials() {
                     </div>
                     <blockquote className="text-lg text-gray-400 grow"> This app will help a lot of students be more interested in STEM </blockquote>
                     <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                      <cite className="text-gray-200 not-italic">Alexis Morris</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">IoT Chair, Toronto</a>
+                      <cite className="text-gray-200 not-italic">Paul Hoover</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">ShapesXR</a>
                     </div>
                   </div> */}
 

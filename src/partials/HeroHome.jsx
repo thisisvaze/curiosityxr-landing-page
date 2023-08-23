@@ -54,8 +54,8 @@ function HeroHome() {
             </Modal> */}
           </div>
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-2 md:pb-2">
-            <h1 className="h1 mb-4 mt-6" data-aos="fade-up">
+          <div className="max-w-3xl mx-auto px-5 text-center pb-2 md:pb-2">
+            <h1 className="h1 mb-4 mt-6 " data-aos="fade-up">
               Learning designed for humans
             </h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
