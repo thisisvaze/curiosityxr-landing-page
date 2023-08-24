@@ -38,19 +38,20 @@
         letter-spacing: -0.1rem !important;
       }
       .header-image{
-        height: 40vh !important;
+        margin-top: 8vh;
+        height: 30vh !important;
 
       }
   }
 
   .header-image{
     object-fit: cover;
-    height: 60vh !important;
+    height: 60vh;
     object-position: top; /* Center the image within the element */
     background-repeat: no-repeat;
   }
 
   .backdrop-blur{
-    backdrop-filter: blur(200px);
+    backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.7);
   }
