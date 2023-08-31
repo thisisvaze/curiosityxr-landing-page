@@ -32,7 +32,7 @@ function Header() {
 
   return (
     <header className="fixed w-full z-30 backdrop-blur h-16 ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
 
           {/* Site branding */}
@@ -109,7 +109,7 @@ function Header() {
 
               </li>
               <li>
-                <Link to="https://www.oculus.com/experiences/quest/8662430537161741/" className="justify-end btn text-white bg-gray-200 hover:bg-gray-300 w-full mb-4 sm:w-auto sm:mb-0" target="_blank" rel="noopener noreferrer" href="https://www.oculus.com/experiences/quest/8662430537161741/">Get started</Link>
+                <Link to="https://www.oculus.com/experiences/quest/8662430537161741/" className="justify-end btn text-white bg-gray-200 hover:bg-gray-300 w-full mb-4 sm:w-auto sm:mb-0" target="_blank" rel="noopener noreferrer" href="https://www.oculus.com/experiences/quest/8662430537161741/"> Get started</Link>
               </li>
             </ul>
 
