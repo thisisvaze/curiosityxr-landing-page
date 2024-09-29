@@ -58,7 +58,7 @@ module.exports = {
         "1/1": "100%",
       },
       fontFamily: {
-        inter: ["DM Sans", "sans-serif"],
+        inter: ["Space Grotesk", "sans-serif"],
         "architects-daughter": ['"Architects Daughter"', "sans-serif"],
       },
       fontSize: {

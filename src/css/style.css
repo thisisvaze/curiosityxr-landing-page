@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;500;600;700;800;900&display=fallback');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 
@@ -25,33 +26,72 @@
 
 @media (max-width: 767px) {
     h1 {
-      letter-spacing: -0.2rem !important;
+      letter-spacing: -0.06rem !important;
     }
     h2 {
-      letter-spacing: -0.18rem !important;
+      letter-spacing: -0.06rem !important;
     }
     h3 {
-        letter-spacing: -0.15rem !important;
+        letter-spacing: -0.06rem !important;
       }
 
       h4{
-        letter-spacing: -0.1rem !important;
+        letter-spacing: -0.06rem !important;
       }
       .header-image{
         margin-top: 8vh;
-        height: 30vh !important;
+        height: 40vh !important;
+
+      }
+      .header-image-cta{
+        margin-top: 8vh;
+        height: 40vh !important;
 
       }
   }
 
+  .text-primary{
+    @apply text-slate-100;
+  }
+
+  .text-secondary{
+    @apply text-slate-300;
+  }
+
+  .text-tertiary{
+    @apply text-slate-400;
+  }
+  .bg-secondary{
+    @apply bg-purple-700;
+  }
+
+  .border-primary{
+    @apply border-slate-600;
+  }
+  .bg-primary{
+    @apply bg-slate-800;
+  }
+  .bg-accent{
+    
+    @apply bg-blue-600  transition duration-200;
+    &:hover{
+      @apply bg-blue-700
+    }
+  }
   .header-image{
     object-fit: cover;
     height: 60vh;
     object-position: top; /* Center the image within the element */
     background-repeat: no-repeat;
   }
+  .header-image-cta{
+    object-fit: cover;
+    height: 20vh;
+    object-position: top; /* Center the image within the element */
+    background-repeat: no-repeat;
+  }
 
   .backdrop-blur{
     backdrop-filter: blur(20px);
-    background: rgba(255, 255, 255, 0.7);
+    @apply bg-slate-800/70
   }

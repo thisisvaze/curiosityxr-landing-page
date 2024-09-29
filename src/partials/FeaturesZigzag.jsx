@@ -1,20 +1,21 @@
 import React from 'react';
+import { FaBrain, FaQuestion, FaLightbulb, FaEye, FaComments, FaUserCog, FaSearch, FaHeadphones, FaHandsHelping } from 'react-icons/fa';
 
-import FeatImage01 from '../images/features-03-image-01.png';
-import FeatImage02 from '../images/features-03-image-02.png';
-import FeatImage03 from '../images/features-03-image-03.png';
+import FeatImage01 from '../images/features-03-image-01.webp';
+import FeatImage02 from '../images/features-03-image-02.webp';
+import FeatImage03 from '../images/features-03-image-03.webp';
 
 function FeaturesZigzag() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-6 md:py-10 border-t border-gray-800">
+        <div className="py-6 md:py-10 border-t border-primary">
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <div className="inline-flex text-sm py-1 px-3 m-2 text-purple-600 bg-purple-200 rounded-full mb-4">It's like magic</div>
-            <h1 className="h2 mb-4">The ultimate learning experience</h1>
-            <p className="text-xl text-gray-400">We are building tools to support learning like never before.</p>
+            <div className="inline-flex text-sm py-1 px-3 m-2 text-primary bg-accent rounded-full mb-4">It's like magic</div>
+            <h1 className="h2 text-primary mb-1">The Ultimate Learning Experience</h1>
+            <p className="lg:text-xl text-secondary">A tool to support learning like never before</p>
           </div>
 
           {/* Items */}
@@ -29,29 +30,23 @@ function FeaturesZigzag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">What is the color of a cell wall?</div>
-                  <h3 className="h3 mb-3">Be curious </h3>
+                  <div className="font-architects-daughter text-xl text-tertiary mb-2">How does a rocket look like from the inside?</div>
+                  <h3 className="h3  text-primary mb-3">No limits to curiosity</h3>
                   {/* <p className="text-xl text-gray-400 mb-4">Active learning </p> */}
-                  <ul className="text-lg text-gray-400 -mb-2">
-                    <li className="flex items-center mb-2">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Active learning helps better knowledge recall</span>
-                    </li>
-                    <li className="flex items-center mb-2">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Curiosity-based learning is the ultimate experience</span>
-                    </li>
-                    <li className="flex items-center">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>No questions are dumb questions</span>
-                    </li>
-                  </ul>
+                  <ul className="text-md hidden md:block lg:text-lg text-tertiary -mb-2">
+                <li className="flex items-center mb-2">
+                  <FaBrain className="w-5 h-5 text-blue-500 mr-2 shrink-0" />
+                  <span>Active learning helps better knowledge recall</span>
+                </li>
+                <li className="flex items-center mb-2">
+                  <FaLightbulb className="w-5 h-5 text-yellow-500 mr-2 shrink-0" />
+                  <span>Curiosity-based learning is the ultimate experience</span>
+                </li>
+                <li className="flex items-center">
+                  <FaQuestion className="w-5 h-5 text-purple-500 mr-2 shrink-0" />
+                  <span>No questions are dumb questions</span>
+                </li>
+              </ul>
                 </div>
               </div>
             </div>
@@ -65,29 +60,22 @@ function FeaturesZigzag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">Oh! I want to learn about basketball physics</div>
-                  <h3 className="h3 mb-3">Let your thoughts flow</h3>
-                  <p className="text-xl text-gray-400 mb-4">An interactive multimodal medium to support your thoughts</p>
-                  <ul className="text-lg text-gray-400 -mb-2">
-                    <li className="flex items-center mb-2">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>See what you want to see - Powered by 1M+ models</span>
-                    </li>
-                    <li className="flex items-center mb-2">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Ask what you want - Powered by ChatGPT</span>
-                    </li>
-                    <li className="flex items-center">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Personalize what you want to learn</span>
-                    </li>
-                  </ul>
+                  <div className="font-architects-daughter text-xl text-tertiary mb-2">Oh! I want to learn about basketball physics</div>
+                  <h3 className="h3 text-primary mb-3">An interactive space for your thoughts</h3>
+                  <ul className="text-lg hidden md:block text-tertiary -mb-2">
+                <li className="flex items-center mb-2">
+                  <FaEye className="w-5 h-5 text-green-500 mr-2 shrink-0" />
+                  <span>See what you want to see - Powered by 1M+ models</span>
+                </li>
+                <li className="flex items-center mb-2">
+                  <FaComments className="w-5 h-5 text-blue-500 mr-2 shrink-0" />
+                  <span>Ask what you want - Powered by ChatGPT</span>
+                </li>
+                <li className="flex items-center">
+                  <FaUserCog className="w-5 h-5 text-purple-500 mr-2 shrink-0" />
+                  <span>Personalize what you want to learn</span>
+                </li>
+              </ul>
                 </div>
               </div>
             </div>
@@ -101,29 +89,22 @@ function FeaturesZigzag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">A Plant cell coming out of a plant?</div>
-                  <h3 className="h3 mb-3">A Digital Microscope</h3>
-                  <p className="text-xl text-gray-400 mb-4">Discover knowledge from your surroundings</p>
-                  <ul className="text-lg text-gray-400 -mb-2">
-                    <li className="flex items-center mb-2">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>A new way to explore digital information</span>
-                    </li>
-                    <li className="flex items-center mb-2">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Learn about it when you see, touch, smell and hear it</span>
-                    </li>
-                    <li className="flex items-center">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Connecting reality with knowledge</span>
-                    </li>
-                  </ul>
+                  <div className="font-architects-daughter text-xl text-tertiary mb-2">A Plant cell coming out of a plant?</div>
+                  <h3 className="h3 text-primary mb-10">A Digital Microscope</h3>
+                 <ul className="text-lg text-tertiary -mb-2 hidden md:block">
+                <li className="flex items-center mb-2">
+                  <FaSearch className="w-5 h-5 text-indigo-500 mr-2 shrink-0" />
+                  <span>A new way to explore digital information</span>
+                </li>
+                <li className="flex items-center mb-2">
+                  <FaHeadphones className="w-5 h-5 text-red-500 mr-2 shrink-0" />
+                  <span>Learn about it when you see, touch, smell and hear it</span>
+                </li>
+                <li className="flex items-center">
+                  <FaHandsHelping className="w-5 h-5 text-orange-500 mr-2 shrink-0" />
+                  <span>Connecting reality with knowledge</span>
+                </li>
+              </ul>
                 </div>
               </div>
             </div>
@@ -132,6 +113,14 @@ function FeaturesZigzag() {
 
         </div>
       </div>
+      <div className="md:hidden max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center pb-12">
+              <div data-aos="fade-up" data-aos-delay="400">
+                <a className="btn w-full lg:mt-4 lg:mb-4 sm:w-auto sm:mb-0 text-white bg-accent hover:bg-accent-dark" target="_blank" rel="noopener noreferrer" href="https://www.oculus.com/experiences/quest/8662430537161741/">
+                  Get Started for Free
+                </a>
+              </div>
+            
+            </div>
     </section>
   );
 }
