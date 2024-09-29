@@ -60,7 +60,7 @@ function FeaturesZigzag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <div className="font-architects-daughter text-xl text-tertiary mb-2">Oh! I want to learn about basketball physics</div>
+                  <div className="font-architects-daughter text-xl text-tertiary mb-2">Oh! I want to learn everything about everything</div>
                   <h3 className="h3 text-primary mb-3">An interactive space for your thoughts</h3>
                   <ul className="text-lg hidden md:block text-tertiary -mb-2">
                 <li className="flex items-center mb-2">
