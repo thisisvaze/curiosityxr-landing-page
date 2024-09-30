@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import axios from 'axios';
-import BannerImage from '../images/banner.png';
 let accessToken = "patVLRbn1vRtEjZRP.efd8c18a297f3982fee2e3e4f48f959d5790b9003de065af93b8a57efe867c18";
 
 function Newsletter() {

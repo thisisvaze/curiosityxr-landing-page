@@ -34,7 +34,7 @@ function Footer() {
             
 
             {/* Copyrights note */}
-            <div className="text-tertiary text-sm mr-4">&copy; CuriosityXR. {new Date().getFullYear()}.</div>
+            <div className="text-tertiary text-sm mr-4"> CuriosityXR. {new Date().getFullYear()}. Created by <a className="underline" href="https://x.com/thisisvaze" target="_blank" rel="noopener noreferrer">Aaditya Vaze</a></div>
 
           </div>
 

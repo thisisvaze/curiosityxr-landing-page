@@ -69,7 +69,7 @@ function FeaturesZigzag() {
                 </li>
                 <li className="flex items-center mb-2">
                   <FaComments className="w-5 h-5 text-blue-500 mr-2 shrink-0" />
-                  <span>Ask what you want - Powered by ChatGPT</span>
+                  <span>Ask what you want - Powered by OpenAI</span>
                 </li>
                 <li className="flex items-center">
                   <FaUserCog className="w-5 h-5 text-purple-500 mr-2 shrink-0" />
