@@ -9,7 +9,7 @@ function HeroHome() {
   return (
     <section>
       <div className="mx-auto relative">
-      <img className="mx-auto max-w-5xl header-image-cta mb-10" src={HeroImage} width="100%" alt="Hero" />
+      <img className=" header-image-cta mx-auto mb-10" src={HeroImage} alt="Hero" />
         {/* Hero content */}
         <div className="relative  lg:pb-16">
             {/* Hero image */}

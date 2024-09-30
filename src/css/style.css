@@ -84,10 +84,10 @@
     object-position: top; /* Center the image within the element */
     background-repeat: no-repeat;
   }
-  .header-image-cta{
+  .header-image-cta {
     object-fit: cover;
-    height: 20vh;
-    object-position: top; /* Center the image within the element */
+    height: 30vh;
+    object-position: center; /* Center the image both horizontally and vertically */
     background-repeat: no-repeat;
   }
 
