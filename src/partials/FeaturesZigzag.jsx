@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBrain, FaQuestion, FaLightbulb, FaEye, FaComments, FaUserCog, FaSearch, FaHeadphones, FaHandsHelping } from 'react-icons/fa';
 
 import FeatImage01 from '../images/features-03-image-01.webp';
@@ -9,16 +9,13 @@ function FeaturesZigzag() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-6 md:py-10 border-t border-primary">
-
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <div className="inline-flex text-sm py-1 px-3 m-2 text-primary bg-accent rounded-full mb-4">It's like magic</div>
-            <h1 className="h2 text-primary mb-1">The Ultimate Learning Experience</h1>
-            <p className="lg:text-xl text-secondary">A tool to support learning like never before</p>
-          </div>
+        
+        <div className="py-6 md:py-10">
+        <h1 className="h2 mt-12 lg:mt-24 text-primary mb-1 text-center ">What drives learning?</h1>
+        <p className="lg:text-xl text-secondary text-center pt-4">Curiosity and active immersion.</p>
 
           {/* Items */}
+          
           <div className="grid mt-5 md:mt-20 gap-20 md:gap-40">
 
             {/* 1st item */}
@@ -31,7 +28,7 @@ function FeaturesZigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <div className="font-architects-daughter text-xl text-tertiary mb-2">How does a rocket look like from the inside?</div>
-                  <h3 className="h3  text-primary mb-3">No limits to curiosity</h3>
+                  <h3 className="h3  text-primary mb-3">Limitless curiosity</h3>
                   {/* <p className="text-xl text-gray-400 mb-4">Active learning </p> */}
                   <ul className="text-md hidden md:block lg:text-lg text-tertiary -mb-2">
                 <li className="flex items-center mb-2">
@@ -61,7 +58,7 @@ function FeaturesZigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
                   <div className="font-architects-daughter text-xl text-tertiary mb-2">Oh! I want to learn everything about everything</div>
-                  <h3 className="h3 text-primary mb-3">An interactive space for your thoughts</h3>
+                  <h3 className="h3 text-primary mb-3">Active Immersion</h3>
                   <ul className="text-lg hidden md:block text-tertiary -mb-2">
                 <li className="flex items-center mb-2">
                   <FaEye className="w-5 h-5 text-green-500 mr-2 shrink-0" />

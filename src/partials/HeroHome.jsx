@@ -55,8 +55,8 @@ function HeroHome() {
           </div>
           {/* Section header */}
           <div className="max-w-3xl mx-auto px-1 lg:px-5 text-center pb-2 md:pb-2">
-            <h1 className="font-semibold lg:text-6xl text-3xl lg:mb-4 lg:mb-0 lg:mt-6 text-primary" data-aos="fade-up">
-              Learn Like it's Magic
+            <h1 className="font-semibold lg:text-4xl text-3xl lg:mb-4 lg:mb-0 lg:mt-6 text-primary" data-aos="fade-up">
+              Experience Learning like Magic
             </h1>
             <p className="lg:text-xl text-secondary mb-8 w-3/4 mx-auto" data-aos="fade-up" data-aos-delay="200">
             Discover Endless Possibilities with AI and Mixed Reality
