@@ -112,7 +112,7 @@ function FeaturesZigzag() {
       </div>
       <div className="md:hidden max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center pb-12">
               <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn w-full lg:mt-4 lg:mb-4 sm:w-auto sm:mb-0 text-white bg-accent hover:bg-accent-dark" target="_blank" rel="noopener noreferrer" href="https://www.oculus.com/experiences/quest/8662430537161741/">
+                <a className="btn w-full lg:mt-4 lg:mb-4 sm:w-auto sm:mb-0 text-white bg-accent hover:bg-accent-dark" target="_blank" rel="noopener noreferrer" href="https://vr.meta.me/s/2Rgf0BFArrcy5sf">
                   Get Started for Free
                 </a>
               </div>

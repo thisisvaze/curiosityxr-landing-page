@@ -78,7 +78,7 @@ function FeaturesBlocks() {
           </div>
 
           <div className="mx-auto text-center" data-aos="fade-up" data-aos-delay="200">
-                <a className="btn w-full mt-12 lg:mt-24 sm:w-auto sm:mb-0 text-white bg-accent hover:bg-accent-dark" target="_blank" rel="noopener noreferrer" href="https://www.oculus.com/experiences/quest/8662430537161741/">
+                <a className="btn w-full mt-12 lg:mt-24 sm:w-auto sm:mb-0 text-white bg-accent hover:bg-accent-dark" target="_blank" rel="noopener noreferrer" href="https://vr.meta.me/s/2Rgf0BFArrcy5sf">
                   Get Started for Free
                 </a>
               </div>
