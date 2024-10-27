@@ -26,7 +26,7 @@ function Testimonials() {
     {
       image: TestimonialImage03,
       quote: "As a science teacher, CuriosityXR made my eyes light up! Teaching in 3D without having to leave the classroom would be game changing for my younger students!",
-      name: "Jonathan Bloomfield",
+      name: "Jonathan B",
       title: "Founder, Scooli"
     }
   ];
@@ -54,9 +54,10 @@ function Testimonials() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 lg:py-20 border-t border-primary">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto opacity-30 text-center pb-12 lg:pb-20">
-            <h2 className="h2 text-tertiary mb-5 px-5">"We are not meant to sit on a chair and learn about the world, we are meant to explore the world itself."</h2>
-            <p className="text-xl font-bold text-secondary"> - Bret Victor -</p>
+          <div className="max-w-3xl mx-auto  text-center pb-12 lg:pb-20">
+            <h1 className="text-3xl font-architects-daughter text-white mb-5 px-5">Why is learning how to walk so natural?</h1>
+            <h2 className="h2 text-tertiary mb-5 opacity-30 px-5">"We are not meant to sit on a chair and learn about the world, we are meant to explore the world itself."</h2>
+            <p className="text-xl font-bold opacity-30 text-secondary"> - Bret Victor -</p>
           </div>
 
           {/* Testimonials */}

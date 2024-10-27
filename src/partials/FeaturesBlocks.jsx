@@ -25,8 +25,8 @@ function FeaturesBlocks() {
         
         <div className="lg:py-20 py-12 border-primary"> 
         <div className=" lg:pb-24 pb-12">
-        <h1 className="h4 text-primary mb-1 text-center ">What is CuriosityXR?</h1>
-        <p className="lg:text-xl text-secondary text-center pt-4">It's like ChatGPT with 3D models, images and voice interactions.</p>
+        <h1 className="h4 font-architects-daughter text-primary mb-1 text-center text-3xl">What is CuriosityXR?</h1>
+        <p className="text-secondary text-center text-2xl pt-4">It's like ChatGPT with 1M+ 3D models in your hands.</p>
 
 
 
@@ -79,9 +79,10 @@ function FeaturesBlocks() {
 
           <div className="mx-auto text-center" data-aos="fade-up" data-aos-delay="200">
                 <a className="btn w-full mt-12 lg:mt-24 sm:w-auto sm:mb-0 text-white bg-accent hover:bg-accent-dark" target="_blank" rel="noopener noreferrer" href="https://vr.meta.me/s/2Rgf0BFArrcy5sf">
-                  Get Started for Free
+                  Get on Meta Quest
                 </a>
               </div>
+              <p className="text-secondary text-center text-md pt-4">Join 500+ early adopters</p>
 
         </div>
       </div>

@@ -58,13 +58,20 @@ function HeroHome() {
             <h1 className="font-semibold lg:text-4xl text-3xl lg:mb-4 lg:mb-0 lg:mt-6 text-primary" data-aos="fade-up">
               Experience Learning like Magic
             </h1>
-            <p className="lg:text-xl text-secondary mb-8 w-3/4 mx-auto" data-aos="fade-up" data-aos-delay="200">
+            <p className="lg:text-lg text-secondary mb-8 w-3/4 mx-auto" data-aos="fade-up" data-aos-delay="200">
             Discover Endless Possibilities with AI and Mixed Reality
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center pb-1">
+             
+              <div data-aos="fade-up" data-aos-delay="400">
+              <a className="btn hover:opacity-80 transition duration-250 ease-in-out w-full lg:mt-4 lg:mb-4 sm:w-auto sm:mb-0 text-white border border-white" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=um-3guz9FO0">
+              Watch Trailer
+            </a>
+              </div>
+              <div className='mx-2'></div>
               <div data-aos="fade-up" data-aos-delay="400">
               <a className="btn w-full lg:mt-4 lg:mb-4 sm:w-auto sm:mb-0 text-white bg-accent" target="_blank" rel="noopener noreferrer" href="https://vr.meta.me/s/2Rgf0BFArrcy5sf">
-              Get started for Free
+              Get on Meta Quest
             </a>
               </div>
             
