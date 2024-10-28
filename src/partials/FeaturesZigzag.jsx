@@ -11,7 +11,7 @@ function FeaturesZigzag() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         <div className="py-6 md:py-10">
-        <h1 className="h2 mt-12 lg:mt-24 text-primary mb-1 text-center">What's it like to actually learn?</h1>
+        <h1 className="h2 mt-12 lg:mt-24 text-primary mb-1 text-center">You'll know when you try it</h1>
         <p className="lg:text-xl text-secondary text-center pt-4">Curiosity and active immersion drive learning, quizzes don't.</p>
 
           {/* Items */}
@@ -27,7 +27,7 @@ function FeaturesZigzag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-tertiary mb-2">How does a rocket look like from the inside?</div>
+                  <div className="font-architects-daughter text-xl text-tertiary mb-2">"How does mercury look like in a test tube?"</div>
                   <h3 className="h3 text-primary mb-3">Don't limit your curiosity, <br /> ask anything.</h3>
                   {/* <p className="text-xl text-gray-400 mb-4">Active learning </p> */}
                   <ul className="text-3xl hidden md:block text-tertiary -mb-2">
@@ -57,7 +57,7 @@ function FeaturesZigzag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <div className="font-architects-daughter text-xl text-tertiary mb-2">Oh! I want to learn everything about everything</div>
+                  <div className="font-architects-daughter text-xl text-tertiary mb-2">"What are rocket engines made of?"</div>
                   <h3 className="h3 text-primary mb-8">Don't watch it happen, <br /> be part of it.</h3>
                   <ul className="text-3xl hidden md:block text-tertiary -mb-2">
                 <li className="flex items-center mb-2">
@@ -86,12 +86,12 @@ function FeaturesZigzag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-tertiary mb-2">A Plant cell coming out of a plant?</div>
+                  <div className="font-architects-daughter text-xl text-tertiary mb-2">"How does a plant cell in my houseplant look like?"</div>
                   <h3 className="h3 text-primary mb-8">Don't just wonder, <br /> feel it.</h3>
                  <ul className="text-3xl text-tertiary -mb-2 hidden md:block">
                 <li className="flex items-center mb-2">
                   <FaSearch className="w-8 h-8 text-indigo-500 mr-5 shrink-0" />
-                  <span>Life-like experience</span>
+                  <span>Discover new things</span>
                 </li>
                 <li className="flex items-center mb-2">
                   <FaHeadphones className="w-8 h-8 text-red-500 mr-5 shrink-0" />
@@ -99,7 +99,7 @@ function FeaturesZigzag() {
                 </li>
                 <li className="flex items-center">
                   <FaSun className="w-8 h-8 text-orange-500 mr-5 shrink-0" />
-                  <span>Natural</span>
+                  <span>Explore Naturally</span>
                 </li>
               </ul>
                 </div>

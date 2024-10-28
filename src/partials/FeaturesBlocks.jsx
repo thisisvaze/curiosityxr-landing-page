@@ -25,8 +25,8 @@ function FeaturesBlocks() {
         
         <div className="lg:py-20 py-12 border-primary"> 
         <div className=" lg:pb-24 pb-12">
-        <h1 className="h4 font-architects-daughter text-primary mb-1 text-center text-3xl">What is CuriosityXR?</h1>
-        <p className="text-secondary text-center text-2xl pt-4">It's like ChatGPT with 1M+ 3D models in your hands.</p>
+        <h1 className="font-architects-daughter text-primary mb-1 text-center text-2xl">What is CuriosityXR?</h1>
+        <p className="text-secondary text-center text-xl pt-4">It's like ChatGPT with 1M+ 3D models in your hands.</p>
 
 
 

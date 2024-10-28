@@ -55,7 +55,7 @@ function Testimonials() {
         <div className="py-12 lg:py-20 border-t border-primary">
           {/* Section header */}
           <div className="max-w-3xl mx-auto  text-center pb-12 lg:pb-20">
-            <h1 className="text-3xl font-architects-daughter text-white mb-5 px-5">Why is learning how to walk so natural?</h1>
+            <h1 className="text-3xl font-architects-daughter text-white mb-5 px-5">Why is learning to walk so natural?</h1>
             <h2 className="h2 text-tertiary mb-5 opacity-30 px-5">"We are not meant to sit on a chair and learn about the world, we are meant to explore the world itself."</h2>
             <p className="text-xl font-bold opacity-30 text-secondary"> - Bret Victor -</p>
           </div>
