@@ -74,13 +74,26 @@ function HeroHome() {
               Get on Meta Quest
             </a>
               </div>
+              {/* Product Hunt Badge */}
+           
             
             </div>
+            
           </div>
           <div className='max-w-3xl mx-auto place-content-center text-primary pb-1 md:pb-1 flex items-center'  data-aos="fade-up" data-aos-delay="400">
             <img src={metaQuestLogo}alt="Quest Logo" className="w-48" />
           </div>
-        
+          <div className="flex justify-center mt-1" data-aos="fade-up" data-aos-delay="600">
+              <a href="https://www.producthunt.com/posts/curiosityxr?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-curiosityxr" target="_blank" rel="noopener noreferrer">
+                <img 
+                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=597583&theme=light" 
+                  alt="CuriosityXR - Learn with 1M+ 3D models & AI in Mixed Reality | Product Hunt"
+                  style={{ width: '180px', height: '54px' }}
+                  width="180"
+                  height="34"
+                />
+              </a>
+            </div>
         </div>
       </div>
     </section>
