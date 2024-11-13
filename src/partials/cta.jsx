@@ -55,12 +55,18 @@ function HeroHome() {
           </div>
           {/* Section header */}
           <div className="max-w-3xl mx-auto px-1 lg:px-5 text-center pb-2 md:pb-2">
+
+          <p className="lg:text-lg font-bold tracking-wider font-architects-daughter text-orange-400 font-bold mb-8 w-3/4 mx-auto" data-aos="fade-up" data-aos-delay="200">
+           #1 AI LEARNING APP ON META QUEST
+            </p>
             <h1 className="font-semibold lg:text-4xl text-3xl mb-4 lg:mb-0 lg:mt-6 text-primary" data-aos="fade-up">
               Experience the Future of Learning
             </h1>
             <p className="lg:text-xl text-secondary mb-8 w-3/4 mx-auto" data-aos="fade-up" data-aos-delay="200">
            with the power of AI and Mixed Reality
             </p>
+
+       
 
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center pb-1 md:space-y-0 space-y-4">
              <div data-aos="fade-up" data-aos-delay="400">

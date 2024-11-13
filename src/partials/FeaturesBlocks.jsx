@@ -82,7 +82,7 @@ function FeaturesBlocks() {
                   Get on Meta Quest
                 </a>
               </div>
-              <p className="text-secondary text-center text-md pt-4">Join 500+ early adopters</p>
+              <p className="text-secondary text-center text-md pt-4 font-bold">Join 1000+ curious explorers</p>
 
         </div>
       </div>

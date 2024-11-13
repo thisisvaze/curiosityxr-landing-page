@@ -55,12 +55,25 @@ function HeroHome() {
           </div>
           {/* Section header */}
           <div className="max-w-3xl mx-auto px-1 lg:px-5 text-center pb-2 md:pb-2">
-            <h1 className="font-semibold lg:text-4xl text-3xl lg:mb-4 lg:mb-0 lg:mt-6 text-primary" data-aos="fade-up">
+
+          <div className="flex justify-center mt-1" data-aos="fade-up" data-aos-delay="600">
+              <a href="https://www.producthunt.com/posts/curiosityxr?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-curiosityxr" target="_blank" rel="noopener noreferrer">
+                <img 
+                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=597583&theme=light" 
+                  alt="CuriosityXR - Learn with 1M+ 3D models & AI in Mixed Reality | Product Hunt"
+                  style={{ width: '180px', height: '54px' }}
+                  width="180"
+                  height="34"
+                />
+              </a>
+            </div>
+            <h1 className="font-semibold lg:text-4xl text-3xl lg:mb-2  lg:mt-6 text-primary" data-aos="fade-up">
               Experience Learning like Magic
             </h1>
-            <p className="lg:text-lg text-secondary mb-8 w-3/4 mx-auto" data-aos="fade-up" data-aos-delay="200">
-            Discover Endless Possibilities with AI and Mixed Reality
+            <p className="lg:text-xl text-secondary mb-8 w-3/4 mx-auto" data-aos="fade-up" data-aos-delay="200">
+              Learn with 1M+ 3D models & AI in Mixed Reality
             </p>
+
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center pb-1 md:space-y-0 space-y-4">
              
               <div data-aos="fade-up" data-aos-delay="400">
@@ -83,17 +96,7 @@ function HeroHome() {
           <div className='max-w-3xl mx-auto place-content-center text-primary pb-1 md:pb-1 flex items-center'  data-aos="fade-up" data-aos-delay="400">
             <img src={metaQuestLogo}alt="Quest Logo" className="w-48" />
           </div>
-          <div className="flex justify-center mt-1" data-aos="fade-up" data-aos-delay="600">
-              <a href="https://www.producthunt.com/posts/curiosityxr?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-curiosityxr" target="_blank" rel="noopener noreferrer">
-                <img 
-                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=597583&theme=light" 
-                  alt="CuriosityXR - Learn with 1M+ 3D models & AI in Mixed Reality | Product Hunt"
-                  style={{ width: '180px', height: '54px' }}
-                  width="180"
-                  height="34"
-                />
-              </a>
-            </div>
+          
         </div>
       </div>
     </section>

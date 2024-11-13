@@ -11,7 +11,7 @@ function FeaturesZigzag() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         <div className="py-6 md:py-10">
-        <h1 className="h2 mt-12 lg:mt-24 text-primary mb-1 text-center">You'll know when you try it</h1>
+        <h1 className="h2 mt-12 lg:mt-24 text-primary mb-1 text-center">You'll love it! ♥️</h1>
         <p className="lg:text-xl text-secondary text-center pt-4">Curiosity and active immersion drive learning, quizzes don't.</p>
 
           {/* Items */}
